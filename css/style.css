@@ -92,13 +92,15 @@ footer .pie .lista-redes a {
 
 .cabecera {
 	transition: all .5s ease;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	/* padding-top: 1rem;
+	padding-bottom: 0.5rem; */
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 154px;
 	z-index: 999;
+	background-color: rgba(0, 140, 255, 0.1);
 }
 
 .cabecera.fondo {
@@ -111,6 +113,7 @@ footer .pie .lista-redes a {
 
 .cabecera .container {
 	width: 100%;
+	height: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -128,7 +131,7 @@ footer .pie .lista-redes a {
 }
 
 .cabecera .link-logo .logo {
-	width: 5.5rem;
+	width: 11rem;
 	height: auto;
 	transition: all .5s ease;
 }
@@ -235,7 +238,7 @@ footer .pie .lista-redes a {
 
 .cabecera .hamb {
 	color: rgba(230, 154, 35, 1);
-	font-size: 2.8rem;
+	font-size: 1.8rem;
 	display: none;
 }
 
@@ -267,12 +270,15 @@ footer .pie .lista-redes a {
 }
 
 .columna {
-	padding-left: 3rem;
-	/* padding-right: 1rem; */
+	padding: 0 3rem;
 }
 
 .columna-100 {
 	width: 100%;
+}
+
+.columna-75 {
+	width: 75%;
 }
 
 .columna-50 {
@@ -744,13 +750,13 @@ footer .pie .lista-redes a {
 	height: calc(100vh - 3rem);
 }
 
-#banner.banner-inicio,
+/* #banner.banner-inicio, */
 #banner.banner-nosotros,
 #banner.banner-servicios,
 #banner.banner-galeria,
 #banner.banner-team,
 #banner.banner-contacto {
-	height: 20vh;
+	height: 154px;
 }
 
 #banner .banner-home {
@@ -776,8 +782,7 @@ footer .pie .lista-redes a {
 
 #banner .container h1 {
 	font-size: 2.8rem;
-	/* color: #ffa;
-	margin-top: 120px; */
+	color: #ffa;
 }
 
 #banner .container p {
@@ -793,8 +798,8 @@ footer .pie .lista-redes a {
 .saltarina {
 	width: 25rem;
 	height: 4rem;
-	border-radius: 10%;
-	border: 0.3rem solid rgba(255, 247, 0, 0.9);
+	/*border-radius: 10%;
+	border: 0.3rem solid rgba(255, 247, 0, 0.9); */
 	color: rgba(255, 45, 0, 0.9);
 	text-decoration: none;
 	display: -webkit-box;
@@ -810,9 +815,9 @@ footer .pie .lista-redes a {
 	position: absolute;
 	bottom: 3rem;
 	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-75%);
+	-ms-transform: translateX(-75%);
+	transform: translateX(-75%);
 	-webkit-animation-name: saltar;
 	animation-name: saltar;
 	-webkit-animation-duration: 1s;
@@ -1103,11 +1108,11 @@ footer .pie .lista-redes a {
 	}
 
 	.saltarina {
-		width: 4rem;
+		width: 24rem;
 		height: 4rem;
 		/* border-radius: 100%;
 		border: 0.3rem solid rgba(255, 247, 0, 0.5);
-		color: rgba(255, 45, 0, 0.5);
+		color: rgba(255, 45, 0, 0.5); */
 		text-decoration: none;
 		display: -webkit-box;
 		display: -ms-flexbox;
@@ -1122,9 +1127,9 @@ footer .pie .lista-redes a {
 		position: absolute;
 		bottom: 3rem;
 		left: 50%;
-		-webkit-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		transform: translateX(-50%);
+		-webkit-transform: translateX(-70%);
+		-ms-transform: translateX(-70%);
+		transform: translateX(-70%);
 		-webkit-animation-name: saltar;
 		animation-name: saltar;
 		-webkit-animation-duration: 1s;
@@ -1132,7 +1137,7 @@ footer .pie .lista-redes a {
 		-webkit-animation-timing-function: linear;
 		animation-timing-function: linear;
 		-webkit-animation-iteration-count: infinite;
-		animation-iteration-count: infinite; */
+		animation-iteration-count: infinite;
 	}
 
 	/* .saltarina:hover {
@@ -1142,29 +1147,29 @@ footer .pie .lista-redes a {
 
 	@-webkit-keyframes saltar {
 		0% {
-			bottom: 3rem;
+			bottom: 1rem;
 		}
 
 		50% {
-			bottom: 5rem;
+			bottom: 3rem;
 		}
 
 		100% {
-			bottom: 3rem;
+			bottom: 1rem;
 		}
 	}
 
 	@keyframes saltar {
 		0% {
-			bottom: 3rem;
+			bottom: 1rem;
 		}
 
 		50% {
-			bottom: 5rem;
+			bottom: 3rem;
 		}
 
 		100% {
-			bottom: 3rem;
+			bottom: 1rem;
 		}
 	}
 
@@ -1190,14 +1195,14 @@ footer .pie .lista-redes a {
 		line-height: 1.5;
 	}
 
-	#banner,
+	/* #banner, */
 	#banner.banner-inicio,
 	#banner.banner-nosotros,
 	#banner.banner-servicios,
 	#banner.banner-galeria,
 	#banner.banner-team,
 	#banner.banner-contacto {
-		height: 93vh;
+		height: 154px;
 	}
 
 	#banner.banner-home {
@@ -1211,10 +1216,34 @@ footer .pie .lista-redes a {
 		object-position: top;
 	}
 
+	/* #banner .container h1 {
+		font-size: 5rem;
+		color: #ffa;
+		margin-top: 120px;
+		text-align: center;
+	} */
+
 	#banner .container p {
-		font-size: 4rem;
+		font-size: 6rem;
 		color: #FFF492;
-		line-height: 1.2;
+		line-height: 1;
+		text-align: justify;
+	}
+
+	.cuadro-saltarina {
+		margin-top: 200px;
+	}
+
+	#nosotros .container{
+		height: 72vh;
+	}
+
+	footer .pie {
+		color: #fff;
+		padding-bottom: 1rem;
+		background-color: rgb(7, 19, 48);
+		padding-top: 1rem;
+		font-size: 2rem;
 	}
 
 }
@@ -1224,13 +1253,22 @@ footer .pie .lista-redes a {
 		font-size: 4vw;
 	}
 
+	#nosotros h2,
+	#servicios h2,
+	#contacto .columna-info-contacto h2,
+	#contacto .columna-info-contacto h3{
+		font-size: 25px;
+		text-align: justify;
+		/* margin-right: 70px; */
+	}
+
 	footer .prefooter {
 		bottom: -2.8rem;
 	}
 
 	footer .pie {
 		text-align: center;
-		padding-top: 3.8rem
+		padding-top: 0.8rem
 	}
 
 	footer .pie .lista-redes {
@@ -1252,6 +1290,7 @@ footer .pie .lista-redes a {
 
 	.columna-mb-100 {
 		width: 100%;
+		font-size: 0.5rem;
 	}
 
 	.columna-mb-50 {
@@ -1294,11 +1333,12 @@ footer .pie .lista-redes a {
 
 	.cabecera .link-logo {
 		position: relative;
-		z-index: 2
+		z-index: 2;
+		margin-left: -50px;
 	}
 
 	.cabecera .link-logo .logo {
-		width: 3.5rem;
+		width: 6.5rem;
 		height: auto;
 	}
 
@@ -1344,9 +1384,9 @@ footer .pie .lista-redes a {
 		font-size: 2rem;
 	}
 
-	.saltarina{
+	/* .saltarina{
 		display: none;
-	}
+	} */
 
 	.seccion {
 		padding-bottom: 2.8rem;
@@ -1369,22 +1409,22 @@ footer .pie .lista-redes a {
 	}
 
 	.form-bloques .form-input {
-		font-size: 1.4rem;
+		font-size: 0.6rem;
 	}
 
 	.form-bloques.form-bloque-boton .btn {
 		width: 100%;
-		font-size: 1.4rem;
+		font-size: 0.6rem;
 	}
 
 	#banner,
-	#banner.banner-inicio,
-	#banner.banner-nosotros,
+	#banner.banner-inicio
+	/* #banner.banner-nosotros,
 	#banner.banner-servicios,
 	#banner.banner-galeria,
 	#banner.banner-team,
-	#banner.banner-contacto {
-		height: 15vh;
+	#banner.banner-contacto */ {
+		height: calc(100vh - 72px);
 	}
 
 	#banner.banner-home {
@@ -1400,7 +1440,20 @@ footer .pie .lista-redes a {
 
 	#banner .container h1 {
 		font-size: 1.5rem;
+		text-align: center;
+		margin-left: 150px;
 	}
+
+	#banner .container p {
+        font-size: 1.5rem;
+        color: #FFF492;
+        line-height: 1;
+        text-align: justify;
+    }
+
+	.cuadro-saltarina {
+        margin-top: 300px;
+    }
 
 	#nosotros .contenedor-serv {
 		height: auto;
@@ -1445,9 +1498,10 @@ footer .pie .lista-redes a {
 	}
 
 	#contacto .columna-info-contacto h2,
+	#contacto .columna-info-contacto h3,
 	#contacto .columna-info-contacto .telefono,
 	#contacto .columna-info-contacto .email {
-		font-size: 1.4rem;
+		font-size: 25px;
 	}
 
 	#contacto .columna-info-contacto .email {
